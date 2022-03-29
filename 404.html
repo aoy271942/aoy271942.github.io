@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>404 Error - aoy190420</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;700&family=Noto+Sans+SC:wght@300;400;700&family=Noto+Sans+TC:wght@300;400;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&family=Google+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@300;400;700&family=Google+Sans+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@300;400;700');
+	</style>
+	<style type="text/css">
+		time {
+			font-family: 'Google Sans',"Noto Sans JP","Roboto","SF Pro", sans-serif;
+			font-size: 128px;
+		}
+	</style>
+	<style type="text/css">
+		h1 {
+			font-family: 'Google Sans',"Noto Sans JP", sans-serif;
+		}
+	</style>
+	<style type="text/css">
+		copyright {
+			font-family: 'Google Sans',"Noto Sans JP", sans-serif;
+		}
+	</style>
+	<style type="text/css">
+		body {
+			font-family: 'Google Sans Text',"Noto Sans JP", sans-serif;
+		}
+	</style>
+	<style type="text/css">
+		table {
+			font-family: 'Roboto Condensed',"Noto Sans JP", sans-serif;
+		}
+	</style>
+	<style type="text/css">
+		#language {
+			font-family: 'Google Sans Text',"Noto Sans JP", sans-serif;
+		}
+	</style>
+
+	<!-- 言語フォント指定 -->
+	<style type="text/css">
+		#ja-jp {
+			font-family: 'Google Sans Text',"Noto Sans JP", sans-serif;
+		}
+	</style>
+	<style type="text/css">
+		#en-us {
+			font-family: 'Google Sans Text',"Noto Sans JP", sans-serif;
+		}
+	</style>
+	<style type="text/css">
+		#zh-cn {
+			font-family: 'Google Sans Text',"Noto Sans SC", sans-serif;
+		}
+	</style>
+	<style type="text/css">
+		#zh-tw {
+			font-family: 'Google Sans Text',"Noto Sans TC", sans-serif;
+		}
+	</style>
+	<style type="text/css">
+		#ko-kr {
+			font-family: 'Google Sans Text',"Noto Sans KR", sans-serif;
+		}
+	</style>
+	<style type="text/css">
+	  @media (prefers-color-scheme: dark) {
+	    :root {
+	      background-color: #1c1c1e;
+	      color: #fff;
+	      transition: .5s;
+	    }
+	  }
+	  @media (prefers-color-scheme: light) {
+	    :root {
+	      background-color: #fff;
+	      color: #1c1c1e;
+	      transition: .5s;
+	    }
+	  }
+	  body {
+	    color: var(--main-text);
+	    background-color: var(--main-bg);
+	    transition: .5s;
+	  }
+	</style>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript">
+								function set2fig(num) {
+
+								   // 桁数が1桁だったら先頭に0を加えて2桁に調整する
+								   var ret;
+								   if( num < 10 ) { ret = "0" + num; }
+								   else { ret = num; }
+								   return ret;
+								}
+
+								function time12(num) {
+								   // 12時間表示
+								   var ret;
+								   if( -1 < num < 12 ) { ret = num;}
+								   if( 12 < num < 23 ) { ret = num - 12;}
+								   else { ret = num; }
+								   return ret;
+								}
+
+								function showClock2() {
+									var nowdate = new Date();
+									var year = nowdate.getFullYear() - 2018;    // 年(4桁の西暦)
+									var mon  = nowdate.getMonth() + 1;   // 月(1～12)
+									var date = nowdate.getDate();        // 日(1～31)
+									var week = nowdate.getDay();         // 曜日(※0～6)
+									var weekchars = new Array( "日", "月", "火", "水", "木", "金", "土" );
+									var todayweek = weekchars[ week ];   // 曜日を文字列で得る
+									var nowTime = new Date();
+									var nowHour = nowTime.getHours ();
+									var nowMin  = set2fig( nowTime.getMinutes() );
+									var nowSec  = set2fig( nowTime.getSeconds() );
+									
+									var Times =  nowHour + ":" + nowMin
+									var Dates =  mon + "月" + date + "日 (" + todayweek + ")"
+								   
+								   document.getElementById("Times").innerHTML = Times;
+								   document.getElementById("Dates").innerHTML = Dates;
+								}
+								setInterval('showClock2()',-1000);
+	</script>
+</head>
+<body>
+
+	<div class="container">
+			<br>
+			<br>
+			<!-- 時計 -->
+			<time>
+				<B><font size="7"><div id="Times">--:--</div></font></B>
+				<font size="5"><p><div id="Dates">--/-- (−)</div></p></font>
+				<div class="progress lime"><div class="determinate"></div></div>
+			</time>
+			
+			<!-- ここから -->
+				<h1><B>404</B></h1>
+
+			<!-- 内容　-->
+			<language lang="ja-jp"><p id="ja-jp">指定されたURLまたはお探しのページは削除されたか表示できません</p></language>
+			<language lang="en-us"><p id="en-us">The specified URL or the page you are looking for has been deleted or cannot be displayed.</p></language>
+			<language lang="zh-cn"><p id="zh-cn">指定的网址或您要查找的页面已被删除或无法显示。</p></language>
+			<language lang="zh-tw"><p id="zh-tw">指定的網址或您要查找的頁面已被刪除或無法顯示。</p></language>
+			<language lang="ko-kr"><p id="ko-kr">지정한 URL 또는 원하는 페이지가 삭제되었거나 표시되지 않습니다.</p></language>
+			<br>
+			<br>
+			<center>
+				<a class="waves-effect waves-light btn" href="https://aoy190420.github.io"><i class="material-icons left">language</i>このサイトのトップへ移動</a>
+			</center>
+
+
+
+			<!-- 著作権表示 -->
+			<br>
+			<br>
+			<br>
+			<copyright>
+				<div class="footer-copyright">
+		            <div class="container">
+		            		バージョン2.4 2022年3月29日
+		            </div>
+		        </div>
+		    </copyright>
+		    <copyright>
+				<div class="footer-copyright">
+		            <div class="container">
+		            	<br>
+		            		© 2020-2022 aoy271942
+	            		<br>
+	            		<br>
+		            </div>
+		        </div>
+		    </copyright>
+	</div>
+</body>
+</html>
