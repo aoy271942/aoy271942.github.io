@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>aoy190420에 오신합니다</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;700&family=Noto+Sans+SC:wght@300;400;700&family=Noto+Sans+TC:wght@300;400;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&family=Google+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@300;400;700&family=Google+Sans+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@300;400;700');
+	</style>
+	<style type="text/css">
+		time {
+			font-family: 'Google Sans',"H2drrB","HYRGoThic B","Noto Sans KR","Roboto","SF Pro", sans-serif;
+			font-size: 128px;
+		}
+	</style>
+	<style type="text/css">
+		h1 {
+			font-family: 'Google Sans',"H2drrB","HYRGoThic B","Noto Sans KR", sans-serif;
+		}
+	</style>
+	<style type="text/css">
+		copyright {
+			font-family: 'Google Sans',"H2drrB","HYRGoThic B","Noto Sans KR", sans-serif;
+		}
+	</style>
+	<style type="text/css">
+		body {
+			font-family: 'Google Sans Text',"H2drrB","HYRGoThic B","Noto Sans KR", sans-serif;
+		}
+	</style>
+	<style type="text/css">
+		table {
+			font-family: 'Roboto Condensed',"H2drrB","HYRGoThic B","Noto Sans KR", sans-serif;
+		}
+	</style>
+	<style type="text/css">
+		#language {
+			font-family: 'Google Sans Text',"Noto Sans KR", sans-serif;
+		}
+	</style>
+	<style type="text/css">
+	  @media (prefers-color-scheme: dark) {
+	    :root {
+	      background-color: #1c1c1e;
+	      color: #fff;
+	      transition: .5s;
+	    }
+	  }
+	  @media (prefers-color-scheme: light) {
+	    :root {
+	      background-color: #fff;
+	      color: #1c1c1e;
+	      transition: .5s;
+	    }
+	  }
+	  body {
+	    color: var(--main-text);
+	    background-color: var(--main-bg);
+	    transition: .5s;
+	  }
+	</style>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript">
+								function set2fig(num) {
+
+								   // 桁数が1桁だったら先頭に0を加えて2桁に調整する
+								   var ret;
+								   if( num < 10 ) { ret = "0" + num; }
+								   else { ret = num; }
+								   return ret;
+								}
+
+								function time12(num) {
+								   // 12時間表示
+								   var ret;
+								   if( -1 < num < 12 ) { ret = num;}
+								   if( 12 < num < 23 ) { ret = num - 12;}
+								   else { ret = num; }
+								   return ret;
+								}
+
+								function showClock2() {
+									var nowdate = new Date();
+									var year = nowdate.getFullYear() - 2018;    // 年(4桁の西暦)
+									var mon  = nowdate.getMonth() + 1;   // 月(1～12)
+									var date = nowdate.getDate();        // 日(1～31)
+									var week = nowdate.getDay();         // 曜日(※0～6)
+									var weekchars = new Array( "일", "월", "화", "수", "목", "금", "토" );
+									var todayweek = weekchars[ week ];   // 曜日を文字列で得る
+									var nowTime = new Date();
+									var nowHour = nowTime.getHours ();
+									var nowMin  = set2fig( nowTime.getMinutes() );
+									var nowSec  = set2fig( nowTime.getSeconds() );
+									
+									var Times =  nowHour + ":" + nowMin
+									var Dates =  mon + "월" + date + "일 " + todayweek + "요일"
+								   
+								   document.getElementById("Times").innerHTML = Times;
+								   document.getElementById("Dates").innerHTML = Dates;
+								}
+								setInterval('showClock2()',-1000);
+	</script>
+</head>
+<body>
+
+	<div class="container">
+			<br>
+			<br>
+			<!-- 時計 -->
+			<time>
+				<B><font size="7"><div id="Times">--:--</div></font></B>
+				<font size="5"><p><div id="Dates">--/-- −--</div></p></font>
+				<div class="progress lime"><div class="determinate"></div></div>
+			</time>
+			
+			<!-- ここから -->
+			<center>
+				<h1>aoy271942에 오신합니다</h1>
+			</center>
+
+			<!-- 内容　-->
+			<center>
+				<p>사용할 서비스를 선택합니다: </p>
+			</center>
+
+			<!-- 表 -->
+		      <table>
+		        <thead>
+		          <tr>
+		              <th></th>
+		              <th></th>
+		              <th></th>
+		          </tr>
+		        </thead>
+
+		        <tbody>
+		          <tr>
+		            <td>LINE 공식 계정(5세대 Bot)</td>
+		            <td></td>
+		            <td>
+		            	<a class="waves-effect waves-light btn" href="line://ti/p/@496gylzt">친구추가</a>
+		            </td>
+		          </tr>
+		        </tbody>
+		      </table>
+
+		    <!-- 言語設定 -->
+		    <br>
+		    <br>
+		    <br>
+			<label>언어 및 지역 설정</label>
+			<select class="browser-default" id="language" onChange=location.href=value;>
+				<option value="" disabled>언어 및 지역 선택</option>
+				<option value="../ko-kr" selected>한국어（대한민국） - 韓国語（大韓民国）</option>
+				<option value="../">日本語（日本） - 일본어（일본）</option>
+				<option value="../en-us">English（United States） - 영어（미국）</option>
+				<option value="../zh-cn">简体中文（中国大陆） - 중국어 간체（중국본토）</option>
+			</select>
+
+			<!-- 著作権表示 -->
+			<br>
+			<br>
+			<br>
+			<copyright>
+				<div class="footer-copyright">
+		            <div class="container">
+		            		버전(版)2.4 2022년 3월 29일
+		            </div>
+		        </div>
+		    </copyright>
+		    <copyright>
+				<div class="footer-copyright">
+		            <div class="container">
+		            	<br>
+		            		© 2020-2022 aoy271942
+	            		<br>
+	            		<br>
+		            </div>
+		        </div>
+		    </copyright>
+	</div>
+</body>
+</html>
